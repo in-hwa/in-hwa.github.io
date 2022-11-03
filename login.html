@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <link href="./basic.css" rel="stylesheet" />
+    <!--<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&display=swap" rel="stylesheet">-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            width: 600px;
+            margin: 0px auto;
+            /*background-color: rgb(224, 224, 224);*/
+
+        }
+
+        h2 {
+            text-align: center;
+            /*font-family: 'Black Han Sans', sans-serif;*/
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            /*margin-top: 180px;*/
+            padding-top: 150px;
+            margin-bottom: 30px;
+
+        }
+
+        div {
+            text-align: center;
+            /*margin-top: 20px;*/
+        }
+
+        #login {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(39, 174, 96);
+            border: 0.8px solid rgb(39, 174, 96);
+            border-radius: 5px;
+            text-align: center;
+            color: azure;
+
+        }
+
+        #newmember {
+            /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+            width: 100px;
+            height: 30px;
+            background-color: rgb(94, 94, 94);
+            border: 0.8px solid rgb(94, 94, 94);
+            border-radius: 5px;
+            text-align: center;
+            color: azure;
+
+        }
+
+        .font {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .con1 {
+            margin-top: 20px;
+            height: 25px;
+        }
+
+        .con2 {
+            margin-top: 30px;
+            height: 25px;
+        }
+
+        .background {
+            background-color: rgb(224, 224, 224);
+            height: 740px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <h2><a href="index.html">햄 플래닛</a></h2>
+        <div>
+            <input class="con1" type="text" name="id" id="id" required placeholder="  아이디" />
+            <br>
+            <input class="con1" type="password" name="password" id="password" required placeholder="  비밀번호" />
+        </div>
+        <div>
+            <a href="#">
+            <input class="con2" type="button" name="login" id="login" value="로그인" /></a>
+        </div>
+        <div class="font">
+            <input class="auto" type="radio" name="auto" value="auto" /> 자동로그인&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a>
+        </div>
+        <div>
+            <a href="membership.html">
+            <input class="con2" type="button" name="newmember" id="newmember" value="회원가입" /></a>
+        </div>
+    </div>
+</body>
+
+</html>

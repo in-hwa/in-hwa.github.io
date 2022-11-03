@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>food/인기순</title>
+</head>
+<link href="./basic.css" rel="stylesheet" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@700&display=swap"
+    rel="stylesheet">
+
+
+<style>
+    body {
+        width: 800px;
+        margin: 0px auto;
+    }
+
+    /* 상단 */
+    .top_nav {
+        text-align: right;
+        font-size: 13px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .top_nav>a:hover {
+        /*background-color: aquamarine;*/
+        font-weight: 700;
+    }
+
+    .logo {
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+
+    /* section 부분  -left */
+    .section {
+        width: 960px;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    .left {
+        float: left;
+        margin-right: 20px;
+        margin-top: 5px;
+        width: 130px;
+        height: 240px;
+        background-color: rgb(224, 224, 224);
+    }
+
+    .left ul {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .left li {
+        width: 130px;
+        height: 35px;
+    }
+
+    .left li>a {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .left_choice {
+        font-weight: 700;
+        color: darkgreen;
+    }
+
+    .left li>a:hover {
+        /*background-color: aquamarine;*/
+        font-weight: 700;
+        color: darkgreen;
+    }
+
+    /* right 부분 */
+    .right>table {
+        width: 570px;
+        height: 400px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .sort{
+        text-align: right;
+        margin-right: 200px;
+        font-size: 13px;
+    }
+    .right_choice{
+        font-weight: bold;
+    }
+
+    .img2 img {
+        margin-top: 20px;
+        width: 130px;
+        height: 130px;
+    }
+
+    /* 풋터 부분 */
+    footer {
+        margin-top: 10px;
+        padding-left: 30px;
+        font-size: 12px;
+        color: rgb(103, 103, 103);
+    }
+
+    .footer_nav>a {
+        color: rgb(103, 103, 103);
+    }
+</style>
+
+<!-- ------------------------------------------------------- -->
+
+<body>
+
+    <div class="top_nav">
+        <a href="login.html"> 로그인 </a> &nbsp;&nbsp;
+        <a href="membership.html"> 회원가입 </a> &nbsp;&nbsp;
+        <a href="community.html"> 커뮤니티 </a> &nbsp;&nbsp;
+        <a href="#"> 마이페이지 </a> &nbsp;&nbsp;
+    </div>
+
+    <div class="logo">
+        <a href="#">
+            <h1><a href="index.html">햄 플래닛</a></h1>
+        </a>
+    </div>
+    <hr>
+
+
+    <div class="section">
+        <div class="left">
+            <ul>
+                <li><a class="left_choice" href="food_sort1.html">&nbsp;&nbsp;&nbsp;FOOD</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;HOUSE</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;WHEEL</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <div class="sort">
+                <a href="food_sort1.html">&nbsp;&nbsp;추천순</a>
+                <a class="right_choice" href="food_sort2.html">&nbsp;&nbsp;인기순</a>
+                <a href="food_sort3.html">&nbsp;&nbsp;최신순</a>
+            </div>
+
+            <table border="0">
+                <tr class="img2">
+                    <td>
+                        <a href="#">
+                        <img src="./image/mini2.png" alt=""> <br>인기분홍</a>
+                    </td>
+                    <td>
+                        <a href="#">
+                        <img src="./image/mini1.png" alt=""> <br>추천노랑</a>
+                    </td>
+                    <td>
+                        <a href="#">
+                        <img src="./image/mini3.png" alt=""> <br>최신파랑</a>
+                    </td>
+                </tr>
+                <tr class="img2">
+                    <td>
+                        <a href="#">
+                        <img src="./image/mini4.png" alt=""> <br>품절연두</a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    
+    <!-- footer 부분-->
+    <hr>
+    <footer>
+        <!-- 정보공개 알림이 있는 부분 -->
+        <div class="footer_nav">
+            <a href="#" target="_blank">정보공개알림</a> |
+            <a href="#" target="_blank">개인정보처리방침</a> |
+            <a href="#" target="_blank">이용서비스현황</a> |
+            <a href="#" target="_blank">이용규정</a> |
+            <a href="#" target="_blank">이메일무단수집거부</a> |
+            <a href="#" target="_blank">전화번호안내</a> |
+            <a href="#" target="_blank">오시는길</a>
+        </div>
+        <!-- 주소가 있는 부분 -->
+        <div class="addr">
+            <ul>
+                <li>(우)05220 해바라기시 강낭콩구 완두콩로 212(찹쌀동)&nbsp;&nbsp;대표전화 02-1234-1234&nbsp;&nbsp;팩스번호 02-1234-4567</li>
+                <li>Copyright &copy; 햄 플래닛 All Right Reserved</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

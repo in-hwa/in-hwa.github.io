@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>커뮤니티 페이지</title>
+</head>
+<link href="./basic.css" rel="stylesheet" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@700&display=swap"
+    rel="stylesheet">
+
+
+<style>
+    body {
+        width: 800px;
+        margin: 0px auto;
+    }
+
+    /* 상단 */
+    .top_nav {
+        text-align: right;
+        font-size: 13px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .top_nav>a:hover {
+        /*background-color: aquamarine;*/
+        font-weight: 700;
+    }
+
+    .logo {
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+
+    /* section 부분  -left */
+    .section {
+        width: 960px;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        margin-left: 90px;
+        margin-right: 30px;
+    }
+
+    .left {
+        float: left;
+        margin-right: 10px;
+        width: 150px;
+        height: 400px;
+      
+    }
+    #product_name{
+        width: 140px;
+        height: 120px;
+    }
+    .auto{
+        font-size: 13px;
+    }
+
+    /* right 부분 */
+    #title{
+        width: 400px;
+        height: 30px;
+    }
+
+    #content{
+        width: 400px;
+        height: 200px;
+    }
+    .con1{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(94, 94, 94);
+            border: 0.8px solid rgb(94, 94, 94);
+            border-radius: 5px;
+            text-align: center;
+            color: azure;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+        .con2{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(39, 174, 96);
+            border: 0.8px solid rgb(39, 174, 96);
+            border-radius: 5px;
+            text-align: center;
+            color: azure;
+        }
+
+    /* 풋터 부분 */
+    footer {
+        margin-top: 10px;
+        padding-left: 30px;
+        font-size: 12px;
+        color: rgb(103, 103, 103);
+    }
+
+    .footer_nav>a {
+        color: rgb(103, 103, 103);
+    }
+</style>
+
+<script>
+    let nCount = 0
+    let imgAniTest = ""
+    let img1 = ""
+
+    window.onload = function () {
+        //이미지 초기화
+        imgAniTest = document.getElementById("imgAniTest")
+        img1 = document.getElementById("img1")
+
+        setInterval(changeImage, 2000)
+    }
+    function changeImage() {
+        nCount++;
+        if (nCount >= 4) {
+            nCount = 1;
+        }
+        img1.src = "./image/" + nCount + ".png"
+    }
+</script>
+<!-- ------------------------------------------------------- -->
+
+<body>
+
+    <div class="top_nav">
+        <a href="login.html"> 로그인 </a> &nbsp;&nbsp;
+        <a href="membership.html"> 회원가입 </a> &nbsp;&nbsp;
+        <a href="community.html"> 커뮤니티 </a> &nbsp;&nbsp;
+        <a href="#"> 마이페이지 </a> &nbsp;&nbsp;
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <h1>햄 플래닛</h1>
+        </a>
+    </div>
+    <hr>
+
+
+    <div class="section">
+        <div class="left">
+            <select name="product_name" id="product_name" multiple>
+                <option value="p1" selected>추천노랑</option>
+                <option value="p2">인기분홍</option>
+                <option value="p3">최신파랑</option>
+                <option value="p4">품절연두</option>
+            </select><br>
+        </div>
+
+        <div class="right">
+            <input type="text" name="title" id="title" class="title"  placeholder="  제목을 입력해주세요" required>
+            <br>
+            <br>
+            <input type="text" name="content" id="content" class="content"  placeholder="  내용을 입력해주세요" required>
+            <br>
+            <br>
+            <input type="file" name="file" id="file">
+            <br><br>
+            <div class="auto">
+            <input type="radio" name="id_open" id="id_open" value="op"> 아이디 공개&nbsp;&nbsp;
+            <input type="radio" name="id_open" id="id_open" value="cl"> 아이디 비공개<br>
+            </div>
+            <br>
+            <br>
+            <input class="con1" type="button" name="tmp" id="tmp" value="임시저장" />
+            <input class="con2" type="submit" name="submit" id="submit" value="등록" />
+
+        </div>
+    </div>
+
+    
+    <!-- footer 부분-->
+    <hr>
+    <footer>
+        <!-- 정보공개 알림이 있는 부분 -->
+        <div class="footer_nav">
+            <a href="#" target="_blank">정보공개알림</a> |
+            <a href="#" target="_blank">개인정보처리방침</a> |
+            <a href="#" target="_blank">이용서비스현황</a> |
+            <a href="#" target="_blank">이용규정</a> |
+            <a href="#" target="_blank">이메일무단수집거부</a> |
+            <a href="#" target="_blank">전화번호안내</a> |
+            <a href="#" target="_blank">오시는길</a>
+        </div>
+        <!-- 주소가 있는 부분 -->
+        <div class="addr">
+            <ul>
+                <li>(우)05220 해바라기시 강낭콩구 완두콩로 212(찹쌀동)&nbsp;&nbsp;대표전화 02-1234-1234&nbsp;&nbsp;팩스번호 02-1234-4567</li>
+                <li>Copyright &copy; 햄 플래닛 All Right Reserved</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
